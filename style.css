@@ -16,13 +16,15 @@ body{
 }
 
 #display{
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
     font-size: 5rem;
     text-align: left ;
     border: none;
     background-color: hsl(0, 0%, 50%);
     color: white;
+    white-space: nowrap;
+    text-overflow: clip;
 
 }
 
@@ -65,3 +67,4 @@ button:active{
 .operator-btn:active{
     background-color: rgb(238, 238, 20);
 }
+
