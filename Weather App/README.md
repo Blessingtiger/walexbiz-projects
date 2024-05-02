@@ -1,0 +1,1 @@
+This is a weather app in which users can enter a city name and get the current weather information for tha city. OpenWeatherMap API is used to fetch the weather data.

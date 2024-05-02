@@ -1,0 +1,83 @@
+/* Custom CSS */
+body {
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.clear-Sky {
+background-image: url("clear-sky.jpg") !important;
+}
+
+.thunderstorm {
+background-image: url("thunderstorm.jpg") !important;
+}
+
+.mist {
+background-image: url("mist.jpg") !important;
+}
+
+.scattered-clouds {
+  background-image: url("scattered-clouds.jpg") !important;
+}
+
+.rainy {
+background-image: url("Rainy.jpg") !important;
+}
+
+.overcast-clouds {
+background-image: url("overcast-clouds.jpg") !important;
+}
+
+.broken-clouds {
+background-image: url("broken-clouds.jpg") !important;
+}
+
+.light-rain {
+background-image: url("light-rain.jpg") !important;
+}
+
+.shower-rain {
+  background-image: url("shower-rain.webp") !important;
+}
+
+.snow {
+background-image: url("snowfall.jpg") !important;
+}
+
+.few-cloud {
+  background-image: url("few-cloud.jpg") !important;
+}
+
+/* Add any upcoming background images here later  */
+/* . {
+  background-image: url("") !important;
+}
+
+. {
+  background-image: url("") !important;
+}
+
+. {
+  background-image: url("") !important;
+} */
+
+.container {
+  margin-top: 400px;
+  text-align: center;
+}
+
+.container-custom {
+  border-radius: 15px; 
+}
+
+.bg-dark-custom {
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;!important
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+} 

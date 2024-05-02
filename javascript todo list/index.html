@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #todo-list {
+        margin-top: 20px;
+    }
+    .todo-item {
+        margin-bottom: 5px;
+    }
+    .checkbox-wrapper * {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
+    .checkbox-wrapper input[type="checkbox"] {
+        display: none;
+    }
+
+    .checkbox-wrapper label {
+        --size: 30px; /* Adjust size as needed */
+        --shadow: calc(var(--size) * .07) calc(var(--size) * .1);
+        position: relative;
+        display: inline-block;
+        width: var(--size);
+        height: var(--size);
+        margin-right: 10px; /* Adjust spacing as needed */
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease border;
+    }
+
+    .checkbox-wrapper label:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(var(--size) * 0.5);
+        height: calc(var(--size) * 0.2);
+        border-left: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .checkbox-wrapper input[type="checkbox"]:checked + label {
+        background-color: #fff;
+        border: 2px solid #00bcd4;
+    }
+
+    .checkbox-wrapper input[type="checkbox"]:checked + label:before {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+    <h2>Todo List</h2>
+    <input type="text" id="todo-input" placeholder="Add new todo">
+    <button id="add-button">Add</button>
+    <div id="todo-list"></div>
+
+    <script>
+        document.getElementById("add-button").addEventListener("click", addTodo);
+
+        function addTodo() {
+            var input = document.getElementById("todo-input");
+            var todoText = input.value.trim();
+            if (todoText === "") {
+                alert("Please enter a todo item");
+                return;
+            }
+
+            var now = new Date();
+            var dateTime = now.toLocaleString();
+
+            var todoItem = document.createElement("div");
+            todoItem.classList.add("todo-item");
+            todoItem.innerHTML = `<div class="checkbox-wrapper">
+                                      <input type="checkbox" id="todo-checkbox">
+                                      <label for="todo-checkbox"></label>
+                                      <span>${todoText} - ${dateTime}</span>
+                                      <button onclick="deleteTodo(this)">Delete</button>
+                                  </div>`;
+
+            document.getElementById("todo-list").appendChild(todoItem);
+            input.value = "";
+        }
+
+        function deleteTodo(button) {
+            var todoItem = button.parentElement.parentElement;
+            todoItem.remove();
+        }
+    </script>
+</body>
+</html>
