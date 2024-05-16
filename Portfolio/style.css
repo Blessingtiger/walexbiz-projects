@@ -11,7 +11,7 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: 62.5%;
     overflow: hidden;
 }
 
@@ -19,13 +19,13 @@ html {
     --bg-color: #000022;
     --second-bg-color: #21a859;
     --text-color:white;
-    --main-color: red;
+    --main-color: rgb(255, 0, 0);
 
 }
 
 body {
-    background-image:url(coverphoto.jpg);
     color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 .header{
@@ -33,14 +33,49 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    padding:4rem 12%;
-    background: rgba(172, 7, 89, 0.4);
-    backdrop-filter: blur(15%);
+    padding:3rem 9%;
+    background: rgba(128, 5, 66, 0.4);
+    backdrop-filter: blur(20%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 
+}
+
+
+.logo {
+    font-size: 3rem ;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+   
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: rgb(138, 122, 122);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
 
 #menu-icon {
@@ -50,48 +85,48 @@ body {
 
 }
 
-.logo {
-    font-size:4rem ;
-    color: var(--text-color);
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.4s ease;
-   
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
 }
 
-.logo:hover {
-    transform: scale(1.2);
-    text-decoration: none;
-}
-
-span{
-    color: var(--main-color);
-}
-
-.navbar a {
-    font-size: 2rem;
-    color: var(--second-bg-color);
-    margin-left: 4rem;
-    font-weight: 400;
-    border-bottom: 3px solid transparent;
-    text-decoration: none;
-}
-
-.navbar a:hover,
-.navbar a.active{
-    color: var(--main-color);
-    border-bottom: 4px solid var(--main-color);
-}
-
-p{
-    text-align: center;
+.home {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 300px;
-    display: block;
-    font-size: 2rem;
-    padding: 20px;
-    
+    gap: 8rem;
+}
 
+.home-rectangle{
+    position: absolute;
+    background-color: var(--main-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.home-content h3{
+    font-size: 3.3rem;
+    font-weight: 700;
 
 }
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.home-content h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+
 
