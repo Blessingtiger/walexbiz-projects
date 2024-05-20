@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    border-radius: 50px;
+background: #9a5174;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    /* 
+     */
+     border-radius: 50px;
+background: #9a5174;
+box-shadow:  -20px -20px 60px #312129,
+             20px 20px 60px #e868a6;
+    margin-top: 100px;
+}
+
+.mb-4{
+    background-color: #312129;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    
+}
+
+.form-label {
+    font-weight: bold;
+    
+}
+
+
+.mb-3 {
+    margin: 20px;
+    padding: 5px;
+    display: block;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+    
+    
+  }
+  
+.mb-3 {
+    /* width: 200px;
+    height: 40px; */ 
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    color: #bf1266;
+}
+
+.btn-primary {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    border: none;
+    margin: 5px auto 0; /* Center the button horizontally and add top margin */
+    display: flex;
+}
+
+.btn-primary::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.btn-primary:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.btn-primary:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+.addDelete {
+    display: flex;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+
+.form-control {
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    /* background-color: rgb(174, 173, 243); */
+    color: rgb(10, 12, 14);
+    width: 100%;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+}
+
+.item{
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    text-align: block;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  #312129;
+    border-radius: 10px;
+}
+
+
+.me-2 {
+        --border-radius: 15px;
+        --border-width: 4px;
+        appearance: none;
+        position: relative;
+        padding: 1em 2em;
+        border: 0;
+        background-color: #212121;
+        font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        z-index: 2;
+}
+       
+.me-2::after {
+        --m-i: linear-gradient(#000, #000);
+        --m-o: content-box, padding-box;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: var(--border-width);
+        border-radius: var(--border-radius);
+        background-image: conic-gradient(
+            #488cfb,
+            #29dbbc,
+            #ddf505,
+            #ff9f0e,
+            #e440bb,
+            #655adc,
+            #488cfb
+        );
+        -webkit-mask-image: var(--m-i), var(--m-i);
+        mask-image: var(--m-i), var(--m-i);
+        -webkit-mask-origin: var(--m-o);
+        mask-origin: var(--m-o);
+        -webkit-mask-clip: var(--m-o);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+        filter: hue-rotate(0);
+        animation: rotate-hue linear 500ms infinite;
+        animation-play-state: paused;
+    }
+    
+.me-2:hover::after {
+        animation-play-state: running;
+    }
+    
+    @keyframes rotate-hue {
+        to {
+        filter: hue-rotate(1turn);
+    }
+    }
+    
+.me-2,
+.me-2::after {
+        box-sizing: border-box;
+    }
+    
+    .me-2:active {
+        --border-width: 5px;
+    }
+

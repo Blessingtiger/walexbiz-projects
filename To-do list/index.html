@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5" >
+  <h1 class="text-center mb-4">Todo List</h1>
+  <div class="mb-3">
+    <label for="taskInput" class="form-label">Task Description:</label>
+    <input type="text" class="form-control" id="taskInput">
+  </div>
+  <div class="mb-3">
+    <label for="categoryInput" class="form-label">Category:</label>
+    <input type="text" class="form-control" id="categoryInput">
+  </div>
+  <div class="mb-3">
+    <label for="dateTimeInput" class="form-label">Scheduled Date & Time:</label>
+    <input type="datetime-local" class="form-control" id="dateTimeInput">
+  </div>
+
+  <div class="addDelete">
+
+    <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+    <button id="deleteAllBtn" class="btn btn-primary">Delete All</button> <!-- Add Delete All button -->
+  </div>
+
+  <div id="todo-list" class="mt-5">
+    <!-- Tasks will be dynamically added here -->
+  </div>
+</div>
+
+<script src="style.js"></script>
+
+</body>
+</html>
