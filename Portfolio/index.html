@@ -1,113 +1,219 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    <div id="particles-js"></div>
-    <header class="header">
-        <a href="#home" class="logo">Blessing
-            <span>Tiger</span>
-        </a>
-        
-        <i class="bx bx-menu" id="menu-icon" ></i>
-        
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#above">About</a>
-            <a href="#blog">Blog</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        
-    </header>
-    
-    <!--My about page starts from here-->
-    
-    <section  class="about-section" id="home">
-        <div class="about-content" >
-            <h3>Hi</h3>
-            <h1>I'm  <span>Tiger Eruona Blessing</span></h1>
-            <h3 class="text-animation">
-                I'm a <span></span>
-            </h3>
-                <p>Multifaceted professional with a passion for technology, creativity, and entrepreneurship. I wear many hats, including that of a software engineer, blogger, makeup artist, and entrepreneur. Here's a bit more about my journey and what drives me:</p>
-                <p>As a software engineer,  I specialize in developing robust, scalable, and user-friendly software applications. My expertise spans various programming languages and frameworks, enabling me to craft innovative solutions to complex problems. I thrive in dynamic environments where I can continuously learn and apply new technologies to deliver high-quality products. <br> </p>
-                <p>As a blogger, writing has always been a passion of mine. Through blogging, I have found a perfect outlet to share my thoughts, experiences, and knowledge with the world. My blog covers a diverse range of topics, from tech tutorials and industry insights to personal growth and lifestyle tips. I believe in the power of words to inspire, educate, and connect people from all walks of life. <br> </p>
-                <p>As a makeup artist, creativity is at the heart of everything I do. Makeup artistry allows me to express that creativity in a unique and impactful way. I help individuals enhance their natural beauty and boost their confidence, whether it's for a special event, a photoshoot, or a personal makeover. I enjoy experimenting with different styles and techniques to achieve the perfect look for each client. <br></p>
-                <p>As an entrepreneur, being an entrepreneur has taught me the importance of resilience, innovation, and strategic thinking. I have successfully launched and managed several ventures, each contributing to my growth as a business leader. My entrepreneurial journey is driven by a desire to create value, solve real-world problems, and make a positive impact on the community. I am always on the lookout for new opportunities to expand my horizons and collaborate with like-minded individuals. <br></p>
-                <p>Thank you for visiting my portfolio! I look forward to connecting with you and exploring how we can work together.</p>
-                
-               <div class="social-icons">
-                   <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="about.html"><i class='bx bxl-github'></i></a>
-                    <a href="class.html"><i class='bx bxl-facebook'></i></a>
-                    <a href="instagram.html"><i class='bx bxl-instagram'></i></a>
-                    <a href="youtube.html"><i class='bx bxl-youtube'></i></a>
-                    
-                </div>
-                
-                <a href="#" class="btn">Download Cv</a>
-            </div>
+
+  <div class="hero-container">
+
+    <div id="particles-js">
+
+      <div class="hero-section">
+
+        <div class="social-icons">
+
+          <a href="#"><i class='bx bxl-linkedin' ></i></a>
+
+          <a href="about.html"><i class='bx bxl-github'></i></a>
+
+          <a href="class.html"><i class='bx bxl-facebook'></i></a>
+
+          <a href="instagram.html"><i class='bx bxl-instagram'></i></a>
+
+          <a href="youtube.html"><i class='bx bxl-youtube'></i></a>
 
         </div>
-          
-        <h2 style="text-align:center">Our Team</h2>
-        <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="cpu.jpg" alt="Jane" style="width:100%">
-                <div class="container">
-                  
-                  
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="girlfacingpc.jpg" alt="Mike" style="width:100%">
-                <div class="container">
-                  
-                  <p class="title">Art Director</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>mike@example.com</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="card">
-                <img src="handonpc.jpg" alt="John" style="width:100%">
-                <div class="container">
-                 
-                  <p class="title">Designer</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
+
+        <div class="hero-text"> 
+
+          <h1>I'm  <span>Tiger Eruona Blessing</span></h1>
+
         </div>
-          
-        
+
+        <div><a href="#" class="btn">Download Cv</a></div>
+
+      </div>
+
+    </div>
+
+    <header class="header">
+
+      <div class="header-container">
+
+        <a href="#home" class="logo">Blessing
+
+          <span>Tiger</span>
+
+        </a>
+
+        <div>
+
+          <i class="bx bx-menu" id="menu-icon"></i>
+
+          <nav class="navbar" id="navbar">
+
+              <a href="#home" class="active">Home</a>
+
+              <a href="#about">About</a>
+
+              <a href="#blog">Blog</a>
+
+              <a href="#portfolio">Portfolio</a>
+
+              <a href="#skills">Skills</a>
+
+              <a href="#contact">Contact</a>
+
+          </nav>
+
+          <div class="overlay" id="overlay">
+
+              <nav class="overlay-menu">
+
+                  <a href="#home">Home</a>
+
+                  <a href="#about">About</a>
+
+                  <a href="#blog">Blog</a>
+
+                  <a href="#portfolio">Portfolio</a>
+
+                  <a href="#skills">Skills</a>
+
+                  <a href="#contact">Contact</a>
+
+              </nav>
+
+          </div>
+
+        </div>
+
+      </div> 
+
+    </header>
+
+
+  </div>
+
+    <!--My about page starts from here-->
+
+    <section  class="about-section" id="home">
+
+
+        <!-- <div class="about-content" >
+
+                <p>Multifaceted professional with a passion for technology, creativity, and entrepreneurship. I wear many hats, including that of a software engineer, blogger, makeup artist, and entrepreneur. Here's a bit more about my journey and what drives me:</p>
+
+                <p>As a software engineer,  I specialize in developing robust, scalable, and user-friendly software applications. My expertise spans various programming languages and frameworks, enabling me to craft innovative solutions to complex problems. I thrive in dynamic environments where I can continuously learn and apply new technologies to deliver high-quality products. <br> </p>
+
+                <p>As a blogger, writing has always been a passion of mine. Through blogging, I have found a perfect outlet to share my thoughts, experiences, and knowledge with the world. My blog covers a diverse range of topics, from tech tutorials and industry insights to personal growth and lifestyle tips. I believe in the power of words to inspire, educate, and connect people from all walks of life. <br> </p>
+
+                <p>As a makeup artist, creativity is at the heart of everything I do. Makeup artistry allows me to express that creativity in a unique and impactful way. I help individuals enhance their natural beauty and boost their confidence, whether it's for a special event, a photoshoot, or a personal makeover. I enjoy experimenting with different styles and techniques to achieve the perfect look for each client. <br></p>
+
+                <p>As an entrepreneur, being an entrepreneur has taught me the importance of resilience, innovation, and strategic thinking. I have successfully launched and managed several ventures, each contributing to my growth as a business leader. My entrepreneurial journey is driven by a desire to create value, solve real-world problems, and make a positive impact on the community. I am always on the lookout for new opportunities to expand my horizons and collaborate with like-minded individuals. <br></p>
+
+                <p>Thank you for visiting my portfolio! I look forward to connecting with you and exploring how we can work together.</p>
+
+
+
+        </div>
+
+        <h2 style="text-align:center">Our Team</h2>
+
+        <div class="row">
+
+            <div class="column">
+
+              <div class="card">
+
+                <img src="cpu.jpg" alt="Jane" style="width:100%">
+
+                <div class="container">
+
+
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+                  <p><button class="button">Contact</button></p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="column">
+
+              <div class="card">
+
+                <img src="girlfacingpc.jpg" alt="Mike" style="width:100%">
+
+                <div class="container">
+
+                  <p class="title">Art Director</p>
+
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+                  <p>mike@example.com</p>
+
+                  <p><button class="button">Contact</button></p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="column">
+
+              <div class="card">
+
+                <img src="handonpc.jpg" alt="John" style="width:100%">
+
+                <div class="container">
+
+                  <p class="title">Designer</p>
+
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+                  <p><button class="button">Contact</button></p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+        </div> -->
+
     </section>
-    
+
     <!--particles js files-->
+
     <!--particles.js file and then app.js-->
-    
-    
-    
+
+
     <script src="style.js"></script>
+
     <script src="particles.js"></script>
+
     <script src="app.js"></script>
-    
+
 </body>
+
 </html>
