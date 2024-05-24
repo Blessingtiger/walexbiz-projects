@@ -162,12 +162,32 @@
  .social-icons{
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 40px;
     align-items: center;
  }
+
  .hero-text{
     text-align: center;
  }
+
+ .social-icons{
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   align-items: center;
+}
+
+.social-icons i {
+   color: white;
+   font-size: 40px;
+
+}
+
+.social-icons i:hover{
+   color: #21a859;
+   
+}
+
  .content-section {
     display: none;
     padding: 2rem;
@@ -175,3 +195,5 @@
  .content-section.active {
     display: block;
  }
+
+
