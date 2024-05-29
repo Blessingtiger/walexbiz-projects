@@ -34,3 +34,67 @@ function scrollToParticles() {
   const particlesSection = document.getElementById('particles-section');
   particlesSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+const roles = ["Software Engineer.", "Developer.", "Makeup Artist."];
+let roleIndex = 0;
+let charIndex = 0;
+
+function clearRoleText(textElement, callback) {
+  const text = textElement.textContent;
+  if (text.length === 0) {
+    callback();
+    return;
+  }
+  textElement.textContent = text.slice(0, -1);
+  setTimeout(() => {
+    clearRoleText(textElement, callback);
+  }, 100); // Adjust the delay here
+}
+
+function typeRoleText(textElement, roleText, callback) {
+  const text = roleText.substring(0, charIndex + 1);
+  textElement.textContent = text;
+  charIndex++;
+  if (text === roleText) {
+    callback();
+    return;
+  }
+  setTimeout(() => {
+    typeRoleText(textElement, roleText, callback);
+  }, 100); // Adjust the delay here
+}
+
+function blinkCursor(cursorElement, times, callback) {
+  let count = 0;
+  function toggleVisibility() {
+    cursorElement.style.visibility = (cursorElement.style.visibility === 'hidden') ? 'visible' : 'hidden';
+    count++;
+    if (count === times * 2) {
+      callback();
+      return;
+    }
+    setTimeout(toggleVisibility, 500);
+  }
+  toggleVisibility();
+}
+
+function showNextRole() {
+  const roleTextElement = document.getElementById('roleText');
+  const cursorElement = document.getElementById('cursor');
+  const currentRole = roles[roleIndex];
+  clearRoleText(roleTextElement, () => {
+    charIndex = 0;
+    typeRoleText(roleTextElement, currentRole, () => {
+      blinkCursor(cursorElement, 2, () => {
+        clearRoleText(roleTextElement, () => {
+          setTimeout(() => {
+            roleIndex = (roleIndex + 1) % roles.length;
+            showNextRole();
+          }, 1000); // Adjust the delay here
+        });
+      });
+    });
+  });
+}
+
+showNextRole();
