@@ -89,15 +89,18 @@ html {
    flex-direction: column;
    align-items: center;
 }
+
 .overlay-menu a {
    margin: 15px 0;
    font-size: 24px;
    color: white;
    text-decoration: none;
 }
+
 .overlay-menu a:hover {
    color: #f1f1f1;
 }
+
 .logo {
    font-size: 3rem ;
    color: var(--text-color);
@@ -105,6 +108,7 @@ html {
    cursor: pointer;
    transition: 0.3s ease;
 }
+
 .logo:hover {
    transform: scale(1.1);
    text-decoration: none;
@@ -134,6 +138,7 @@ h1 {
    display: none;
    width: 100%;
 }
+
 .navbar a {
    font-size: 1.8rem;
    /* color: rgb(138, 122, 122); */
@@ -225,6 +230,17 @@ p {
 .aboutMe-page{
    background-color: rgb(12, 12, 12);
    text-align: center;
+}
+
+.about-div {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.aboutMe-img {
+   border-radius: 20px;
 }
 
 #me{
@@ -320,6 +336,7 @@ p {
    width: 100%;
    height:auto;
 }
+
 .skills-header{
    height: auto;
    width: 100%;
@@ -334,12 +351,14 @@ p {
    padding-top: 30px;
    font-weight: 900;
 }
+
 .skills-content{
    height: auto;
    width:100%;
    margin-top: 20px;
    margin-bottom: 80px;
 }
+
 .skill-html{
    height: auto;
    width: 45%;
@@ -350,17 +369,20 @@ p {
    display: inline-block;
    padding:1.5%;
 }
+
 .skill-text{
    width:80%;
    position: relative;
    height: 50px;
 }
+
 .html{
    display: inline-block;
    position: absolute;
    left: 5%;
    top:30%;
 }
+
 .html-prog{
    width:100%;
    height:40px;
@@ -370,6 +392,7 @@ p {
    position: relative;
    overflow: hidden;
 }
+
 .html-progress{
    position: absolute;
    top:10%;
@@ -383,6 +406,7 @@ p {
    border-radius: 10px;
    background: #c70039;
 }
+
 .js-progress{
    position: absolute;
    top:10%;
@@ -397,6 +421,7 @@ p {
    border-radius: 10px;
    background: #c70039;
 }
+
 .c-progress{
    position: absolute;
    top:10%;
@@ -410,6 +435,7 @@ p {
    border-radius: 10px;
    background: #c70039;
 }
+
 .python-progress{
    position: absolute;
    top:10%;
@@ -423,6 +449,7 @@ p {
    background: #c70039;
    transition: all .4s ease;
 }
+
 .jquery-progress{
    position: absolute;
    top:10%;
@@ -436,6 +463,7 @@ p {
    border-radius: 10px;
    background: #c70039;
 }
+
 .autoCard-progress{
    position: absolute;
    top:10%;
@@ -449,3 +477,148 @@ p {
    transition: all .4s ease;
    background: #c70039;
 }
+
+.Blog-page {
+   background-color: black;
+}
+
+.blog-content1 {
+   justify-content: center;
+   text-align: center;
+ padding-top: 20px;
+} 
+
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   border: none;
+ }
+
+ .blog-post {
+   position: relative;
+   width: calc(50% - 40px);
+   margin: 20px;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition: transform 0.3s ease;
+ }
+
+ .blog-image img {
+   width: 100%;
+   height: auto;
+ }
+
+ .date-div {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   color: #fff;
+   padding: 5px 10px;
+   font-size: 14px;
+   text-align: center;
+ }
+
+ .blog-content {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   color: #fff;
+   padding: 20px;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+ }
+
+ .blog-post:hover .blog-content {
+   opacity: 1;
+ }
+
+ h2 {
+   font-size: 20px;
+   margin-top: 0;
+ }
+
+ p {
+   font-size: 16px;
+   margin-bottom: 0;
+ }
+
+ /* Media queries */
+ @media (max-width: 768px) {
+   .blog-post {
+     width: calc(100% - 40px);
+   }
+ }
+
+ @media (min-width: 769px) {
+   .blog-post {
+     width: calc(33.33% - 40px);
+   }
+ }
+
+.footer {
+   background-color: rgb(29, 31, 31);
+   padding: 30px;
+   color: var(--text-color);
+   font-size: 20px;
+   text-align: center;
+}
+
+.portfolio-page {
+   background-color: black;
+}
+
+.portfolio-text {
+   text-align: center;
+   justify-content: center;
+   padding-top: 30px;
+}
+
+/* portfolio */
+
+.image-card-container {
+   position: relative;
+   width: 100%;
+   max-width: 600px; /* Adjust as needed */
+ }
+ 
+ .big-image-card {
+   position: relative;
+   width: 100%;
+ }
+ 
+ .big-image-card img {
+   width: 100%;
+   display: block;
+ }
+ 
+ .overlay1 {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: #00000080;
+   color: #fff;
+   padding: 50%;
+   overflow: hidden;
+
+ }
+ 
+ .small-image-card {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin-top: -50px; /* Adjust as needed */
+   z-index: 1;
+ }
+ 
+ .small-image-card img {
+   width: 100px; /* Adjust as needed */
+   display: block;
+ }
+ 
